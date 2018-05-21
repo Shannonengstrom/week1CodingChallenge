@@ -13,14 +13,15 @@ function readyNow(){
 function addDiv() {
     console.log( 'in addDiv' ); 
    // make a new Div 
-   let newDiv = ( $( "#newDiv" ).append('<div class=".newDiv" <p id="#counterNumber">blank</p><button class=".button" id="swapButton">Swap</button><button class=".button" id="deleteButton">Delete</button>') );
-counter++; 
+   let newDiv = ( $( "#newDiv" ).append('<div class="newDiv"><p id="#counterNumber">blank</p><button class="button" id="swapButton">Swap</button><button class="button" id="deleteButton">Delete</button></div>') );
+    counter++; 
+    changeCounter();
 }
 
 function changeCounter() {
     console.log( 'in counter' );
-    let counter=$(".counter"); 
-    counter.empty(); 
-    counter.append(counter); 
+    let score=$("#counterNumber"); 
+    score.empty(); 
+    score.append(counter); 
 }
 
